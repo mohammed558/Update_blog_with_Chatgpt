@@ -1,3 +1,40 @@
+Project Setup and Usage Instructions
+1. Create the .env File
+Create a .env file in the backend folder and add the following details:
+
+plaintext
+MONGODB_URI=your-DB-URL
+OPENAI_API_KEY=your-api-key-here
+PORT=5000
+2. Start the Backend Server
+Navigate to the backend folder and run the following command to start the backend server:
+
+sh
+node app.js
+3. Run the Project
+Navigate to the root folder and run the following command to start the project:
+
+sh
+npm start
+4. Verify MongoDB Setup
+Refresh your MongoDB and you should see a database named blog_post with a collection named blog_post.
+
+5. Insert Random Data
+Insert random data into the blog_post collection. You can insert as many records as you want using the following template:
+
+json
+{
+  "title": "your-title",
+  "content": "your-content-information"
+}
+6. Update Blogs
+Open your browser and navigate to http://localhost:3000/. Click on the "Update Blog" button.
+
+7. Track Updates
+You can track the update process on the backend terminal. Once all the posts are updated, you will see a message on the webpage indicating that all posts have been updated successfully.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
